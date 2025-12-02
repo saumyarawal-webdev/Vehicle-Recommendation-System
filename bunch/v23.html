@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&display=swap" rel="stylesheet">
+    <title>More Info</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+     crossorigin="anonymous">
+     <style>
+       .section{
+         width:100%;
+         display: block;
+       }
+       .w-75 {
+    width: 98%!important;
+    align-content: center;
+    margin-left: 10px;
+  
+  }
+  .card-body img{
+    float:right;
+    padding-left:5px;
+    height:350px;
+    width:400px;
+  }
+  .card-text{
+    text-align:justify;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-weight: lighter;
+  }
+  .img2 img{
+    float:left;
+    margin-right:9px;
+    height:350px;
+    width:400px;
+    border:2px solid white;
+    border-radius: 18px;
+  }
+  .img1 img{
+    border:2px solid white;
+    border-radius: 18px;
+    margin-left:9px;
+    margin-bottom: 2px;
+  }
+  .btn{
+    float: right;
+  }
+  .carousel-inner{
+    padding-bottom: 8px;
+  }
+  .card-title{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+  }
+  .row{
+    padding: 5px 5px;
+  }
+  .col-sm-6 {
+    flex: 0 0 auto;
+    width: 25%;
+    padding: auto;
+}
+.img-square-wrapper img{
+  float: left;
+  margin-right: 13px;
+  height: 430px;
+  width: 400px;
+}
+.card-footer a{
+  float: right;
+}
+/* Table CSS */
+table {
+  float: left;
+  font-family: 'Baloo Bhaijaan 2', cursive;;
+  border-collapse: collapse;
+  width: 65%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+     </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">S4RG</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="/myproject/HOME.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/myproject/survey.html">Survey</a>
+        </li> 
+        <li class="nav-item">
+          <a href="/myproject/More_info.html"class="nav-link active">Vehicle Info</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="/myproject/about.html">About us</a>
+        </li>
+      </ul>
+      </ul>
+      <!-- <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form> -->
+    </div>
+  </div>
+</nav>
+<br/>
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-12 mt-3">
+          <div class="card">
+              <div class="card-horizontal">
+                  <div class="img-square-wrapper">
+                      <img class="" src="/myproject/images/v23.jpg" alt="Card image cap">
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">Datsun redi-GO</h5>
+                        <table style="border:1px solid black">
+                          <tr>
+                            <th>Company</th>
+                            <td>Datsun</td>
+                          </tr>
+                          <tr>
+                            <th>Price</th>
+                            <td>₹ 3.98 Lakh(avg. showroom price)</td>
+                          </tr>
+                          <tr>
+                            <th>Mileage</th>
+                            <td>20.71 to 22 kmpl</td>
+                          </tr>
+                          <tr>
+                            <th>Engine</th>
+                            <td>799 to 999 cc</td>
+                          </tr>
+                          <tr>
+                            <th>Transmission</th>
+                            <td>Manual & AMT</td>
+                          </tr>
+                          <tr>
+                            <th>Fuel Type</th>
+                            <td>Petrol</td>
+                          </tr>
+                          <tr>
+                            <th>Seating Capacity</th>
+                            <td>5 Seater</td>
+                          </tr>
+                          <tr>
+                            <th>ARAI Mileage</th>
+                            <td>21.07 kmpl(Petrol)</td>
+                          </tr>
+                          <tr>  
+                            <th>Colours</th>
+                            <td>White, Red, Blue, Black, Grey</td>
+                          </tr>
+                        </table>
+                        </p>
+                  </div>
+              </div>
+              <div class="card-footer">
+                  <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+                  <a href="/myproject/More_info.html" class="btn btn-primary">Back</a> 
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&display=swap" rel="stylesheet">
+    <title>Survey</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+     crossorigin="anonymous">
+     
+      
+     <style>
+       .section{
+         width:100%;
+         display: block;
+       }
+       .w-75 {
+    width: 98%!important;
+    align-content: center;
+    margin-left: 10px;
+  
+  }
+  .card-body img{
+    float:right;
+    padding-left:5px;
+    height:350px;
+    width:400px;
+  }
+  .card-text{
+    text-align:justify;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-weight: lighter;
+  }
+  .img2 img{
+    float:left;
+    margin-right:9px;
+    height:350px;
+    width:400px;
+    border:2px solid white;
+    border-radius: 18px;
+  }
+  .img1 img{
+    border:2px solid white;
+    border-radius: 18px;
+    margin-left:9px;
+    margin-bottom: 2px;
+  }
+  .btn{
+    float: right;
+  }
+  .carousel-inner{
+    padding-bottom: 8px;
+  }
+  .card-title{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+  }
+  .row{
+    padding: 5px 5px;
+  }
+  .col-sm-6 {
+    flex: 0 0 auto;
+    width: 25%;
+    padding: auto;
+}
+/* form */
+#Two{
+  float: right;
+}
+#Both{
+  float: right;
+}
+
+.koda a{
+  margin-right: 5px;
+  float :left;
+}
+/* .card{
+  background-image: url("https://previews.123rf.com/images/maljuki/maljuki1505/maljuki150500260/40351574-seamless-doodles-cars-background-vector-black-and-white-background-in-cartoon-style-can-be-used-for-.jpg");
+  background-size:auto; 
+  background-size: 40em;
+  background-repeat: repeat;
+  opacity:0.5;
+  z-index: -1;
+}  */
+
+     </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">S4RG</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="http://localhost/myproject/HOME.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/myproject/survey.html">Survey</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link " href="More_info.html">Vehicle Info</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="about.html">About us</a>
+        </li>
+      </ul>
+      <!-- <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form> -->
+    </div>
+  </div>
+</nav>
+<br/>
+<!-- 
+  1) age group :
+    a) 18-25 b) 26- 35 c) 36-45 d) 46-55 e)56-65 f) above 65
+2) Income :
+   a) <299999 b) 300000-499999 c) 500000-749999 d) 750000-999999 e)1000000- 1249999 f)1250000< 
+3) Members in family: 
+ a)2 b)3  c)4 d)5 e)5+
+4) Preference in vehicle attributes: 
+ a)Aesthetics b)Performance c)Mileage d)Comfort
+5) Preference in Vehicles:
+ a) Two-wheelers b) Four-Wheelers
+6)Main purpose for the vehicle: 
+ a)Long distance travelling b)Daily commutation c)Work
+ -->
+ <div class="card">
+  <div class="card-header">
+    Let's find out which vehicle suits you the most.......!!
+  </div>
+<div class="card-body">
+<form>                      <!--action="intro.php" method="post"-->
+<div class="Q1">
+<h6 class="card-title">Age :</h6>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="age" id="age" value="18-25" required>
+      <label class="form-check-label" for="flexRadioDefault1">
+        18-25
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="age" id="age" value="26-35">
+      <label class="form-check-label" for="flexRadioDefault2">
+        26-35
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="age" id="age" value="36-45">
+      <label class="form-check-label" for="flexRadioDefault2">
+        36-45
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="age" id="age" value="46-55">
+      <label class="form-check-label" for="flexRadioDefault2">
+        46-55
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="age" id="age" value="56-65">
+      <label class="form-check-label" for="flexRadioDefault2">
+        56-65
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="age" id="age" value="65+">
+      <label class="form-check-label" for="flexRadioDefault2">
+        above 65
+      </label>
+    </div>
+    </div>
+    <br>
+<div class="Q2">
+  <h6 class="card-title">Income :</h6>
+  <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="income" id="income" required>
+    <option value="">Income(Rupees)</option>
+    <option value="-3,00,000">Under 3,00,000</option>
+    <option value="3,00,001-5,00,000">3,00,001-5,00,000</option>
+    <option value="5,00,001-7,50,000">5,00,001-7,50,000</option>
+    <option value="7,50,001-10,00,000">7,50,001-10,00,000</option>
+    <option value="10,00,000+">Over 10,00,000</option>
+  </select>
+</div>
+<br>
+<div class="Q3">
+  <h6 class="card-title">Members in family :</h6>
+  <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="family" id="family" required>
+    <option value="">count</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="5+">5+</option>
+  </select>
+</div>
+<br>
+<div class="Q4">
+  <h6 class="card-title">Preference in vehicle attributes :</h6>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="vehicle_attribute" id="attribute_Aesthetics" value="Aesthetics">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Aesthetics
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="vehicle_attribute" id="attribute_Performance" value="Performance" required>
+        <label class="form-check-label" for="flexRadioDefault2">
+          Performance
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="vehicle_attribute" id="attribute_ Mileage" value=" Mileage">
+        <label class="form-check-label" for="flexRadioDefault2">
+          Mileage
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="vehicle_attribute" id="attribute_Comfort" value="Comfort" >
+        <label class="form-check-label" for="flexRadioDefault2">
+          Comfort
+        </label>
+      </div>
+      </div>
+      <br>
+<div class="Q5">
+  <h6 class="card-title">Main purpose for the vehicle : </h6>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="Long distance travelling" id="purpose_Long_distance_travelling" name="purpose[]">
+    <label class="form-check-label" for="flexCheckDefault">
+      Long distance travelling
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="Daily commutation" id="purpose_Daily_commutation" name="purpose[]">
+    <label class="form-check-label" for="flexCheckChecked">
+      Daily commutation
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="Work" id="purpose_ Work" name="purpose[]">
+    <label class="form-check-label" for="flexCheckChecked">
+      Work
+    </label>
+  </div>
+      </div>
+        <br/>
+        <h6 class="card-title">What type of the vehicle do you wanna choose ? </h6>
+      <div class="koda">
+        <a href="/myproject/both.html" class="btn btn-primary">Both</a> 
+        <a href="/myproject/Four.html" class="btn btn-primary">Four Wheeler</a> 
+        <a href="/myproject/Two.html" class="btn btn-primary">Two Wheeler</a> 
+        </div> 
+       
+      </form>
+  
+</div>
+</body>
+</html>
